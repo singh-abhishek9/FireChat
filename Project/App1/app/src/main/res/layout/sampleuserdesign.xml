@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingTop="20dp">
+
+<de.hdodenhof.circleimageview.CircleImageView
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:src="@drawable/profile"
+    app:civ_border_width="1dp"
+    app:civ_border_color="@color/purple"
+    android:id="@+id/userpic"
+    android:layout_marginLeft="5dp"
+    ></de.hdodenhof.circleimageview.CircleImageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Yash Tiwari"
+        android:fontFamily="serif"
+        android:textSize="18dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/userpic"
+        android:id="@+id/username"
+        ></TextView>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Hello,how are you?"
+    android:layout_below="@id/username"
+    android:layout_marginLeft="15dp"
+    android:layout_toRightOf="@id/userpic"
+    android:textSize="12dp"
+    android:id="@+id/userlastmsg"
+    android:textColor="@color/black_1"></TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="14/09/23"
+        android:textColor="@color/black_1"
+        android:id="@+id/userlastmsgdate"
+        android:layout_alignParentEnd="true"></TextView>
+</RelativeLayout>
